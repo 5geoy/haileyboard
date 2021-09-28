@@ -1,19 +1,30 @@
 <!doctype html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
     <title>Audio</title>
   </head>
   <body>
 
     <script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
+      function play(x) {
+	  console.log(x);
+       var sound = new Howl({
+       src: [x+".mp4"]
+    });
+    sound.play();
+	}
     </script>
 
-    <input type="button" value="make_good_choices" onclick="play()">
-    <audio id="audio" src="make_good_choices.mp4"></audio>
+    <input type="button" value="learn_to_suffer" onclick="play(value)">
+    <input type="button" value="make_good_choices" onclick="play(value)">
+    <input type="button" value="my_life_is_a_movie" onclick="play(value)">
+    <input type="button" value="my_phone_died" onclick="play(value)">
+    <input type="button" value="new_leaf" onclick="play(value)">
+    <input type="button" value="Rilly" onclick="play(value)">
+    <input type="button" value="schools_out" onclick="play(value)">
+    <input type="button" value="sundown_sunday" onclick="play(value)">
+    <input type="button" value="trust_surrender" onclick="play(value)">
 
   </body>
