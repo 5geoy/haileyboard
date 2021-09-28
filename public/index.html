@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Audio</title>
+  </head>
+  <body>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" value="make_good_choices" onclick="play()">
+    <audio id="audio" src="make_good_choices.mp4"></audio>
+
+  </body>
