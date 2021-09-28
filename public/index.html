@@ -9,7 +9,7 @@
 
     <script>
       function play(x) {
-	  x.replaceAll(" ", "_").toLowerCase()
+	  x = x.replaceAll(" ", "_").toLowerCase()
 	  console.log(x);
        var sound = new Howl({
        src: [x+".mp4"]
