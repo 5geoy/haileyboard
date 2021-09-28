@@ -9,6 +9,7 @@
 
     <script>
       function play(x) {
+	  x.replaceAll(" ", "_").toLowerCase()
 	  console.log(x);
        var sound = new Howl({
        src: [x+".mp4"]
@@ -17,14 +18,14 @@
 	}
     </script>
 <div class="btn-group">
-    <input type="button" value="learn_to_suffer" onclick="play(value)">
-    <input type="button" value="make_good_choices" onclick="play(value)">
-    <input type="button" value="my_life_is_a_movie" onclick="play(value)">
-    <input type="button" value="my_phone_died" onclick="play(value)">
-    <input type="button" value="new_leaf" onclick="play(value)">
+    <input type="button" value="Learn to Suffer" onclick="play(value)">
+    <input type="button" value="Make Good Choices" onclick="play(value)">
+    <input type="button" value="My Life is a Movie" onclick="play(value)">
+    <input type="button" value="My Phone Died" onclick="play(value)">
+    <input type="button" value="New Leaf" onclick="play(value)">
     <input type="button" value="Rilly" onclick="play(value)">
-    <input type="button" value="schools_out" onclick="play(value)">
-    <input type="button" value="sundown_sunday" onclick="play(value)">
-    <input type="button" value="trust_surrender" onclick="play(value)">
+    <input type="button" value="Schools Out" onclick="play(value)">
+    <input type="button" value="Sundown Sunday" onclick="play(value)">
+    <input type="button" value="Trust Surrender" onclick="play(value)">
 </div>
   </body>
