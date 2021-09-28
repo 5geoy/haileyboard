@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
     <title>Hailey Board!</title>
   </head>
@@ -11,11 +10,9 @@
       function play(x) {
 	  x = x.replaceAll(" ", "_").toLowerCase()
 	  console.log(x);
-       var sound = new Howl({
-       src: [x+".mp4"]
-    });
-    sound.play();
-	}
+          var sound = new Audio(x+".mp4");
+          sound.play();
+      }
     </script>
 <div class="btn-group">
 <div class="item"><input type="button" value="Learn to Suffer" onclick="play(value)"></div>
